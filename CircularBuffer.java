@@ -48,6 +48,9 @@ public class CircularBuffer<Type> implements Iterable<Type>
         return new CircularBufferIterator();
     }
 
+    // main() is used to testing this class.  'java CircularBuffer' will run it.
+    // 'java CircularBuffer argumentA argumentB' would populate the 'args' argument,
+    // but they are not currently used.
     public static void main(String args[])
     {
         String[] init = { "A", "B", "C", "D" } ;
